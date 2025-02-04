@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Notes Pro</string>
+    <string name="Hello.">Hello.</string>
+    <string name="letsGetStarted">Lets get started</string>
+    <string name="hintEmail">Email Id</string>
+    <string name="hintPassword">Password</string>
+    <string name="hintConfirmPassword">Confirm Password</string>
+    <string name="btnCreateAccount">Create Account</string>
+    <string name="txtAlreadyLogin">Already have an account?</string>
+    <string name="txtLogin">Login</string>
+    <string name="txtWelcomeBack">Welcome Back</string>
+    <string name="btnLogin">Login</string>
+    <string name="txtDidNotLogin">Dont have an account?</string>
+    <string name="txtCreate">Create Account</string>
+    <string name="headingAddNote">Add New Note</string>
+    <string name="forgotPassword">Forgot Password?</string>
+    <string name="forgotPasswordInfo">Provide your account email for which you want to reset your password!</string>
+    <string name="back">Back</string>
+    <string name="resetPassword">Reset Password</string>
+    <string name="content">this can be note content that can be long</string>
+    <string name="time">00:00 pm</string>
+    <string name="dateFormat">MMM dd yyyy</string>
+</resources>

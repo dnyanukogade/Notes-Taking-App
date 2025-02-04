@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerifyEmailLink"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="12dp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="132dp"
+        android:contentDescription="verify email icon"
+        android:scaleType="centerInside"
+        android:src="@drawable/check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtHeadingConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Confirm your email address"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/txtSecondLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="We sent confirmation email to :"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeadingConfirm" />
+
+    <TextView
+        android:id="@+id/txtEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="xyz123@gmail.com"
+        android:textColor="?attr/colorSecondary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSecondLine"
+        android:singleLine="true"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="Check your email and click on the confirmation link to continue."
+        android:textColor="?attr/colorPrimary"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmailAddress" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRecheckEmail"
+            android:layout_width="155dp"
+            android:layout_height="62dp"
+            android:backgroundTint="?attr/colorSecondary"
+            android:text="Recheck Email"
+            android:textColor="?attr/colorOnSecondary"
+            android:textSize="16sp"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOpenEmail"
+            android:layout_width="150dp"
+            android:layout_height="62dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:text="Open Gmail"
+            android:textColor="?attr/colorOnPrimary"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
