@@ -5,9 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginHorizontal="32dp"
-    android:layout_marginVertical="16dp"
-    tools:context=".CreateUserProfile">
+    tools:context=".CreateUserProfile"
+    android:padding="8dp">
 
     <ImageView
         android:id="@+id/sign_up_icon"
@@ -36,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/Hello."
-            android:textColor="?attr/colorTertiary"
+            android:textColor="?attr/colorPrimary"
             android:textSize="32sp"
             android:textStyle="bold" />
 
@@ -44,7 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/letsGetStarted"
-            android:textColor="?attr/colorTertiary"
+            android:textColor="?attr/colorPrimary"
             android:textSize="38sp"
             android:textStyle="bold" />
 
@@ -95,10 +94,14 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/create_account_btn"
             android:layout_width="match_parent"
-            android:layout_height="64dp"
-            android:layout_marginTop="12dp"
+            android:layout_height="58dp"
+            android:backgroundTint="?attr/colorPrimary"
             android:text="@string/btnCreateAccount"
-            android:textSize="16sp" />
+            android:textColor="?attr/colorOnPrimary"
+            android:textStyle="bold"
+            app:cornerRadius="10dp"
+            app:iconGravity="textStart"
+            android:layout_marginTop="12dp"/>
 
         <ProgressBar
             android:id="@+id/progress_bar"
@@ -124,8 +127,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/txtAlreadyLogin"
-            android:textColor="?attr/colorTertiary" />
-
+            android:textColor="?attr/colorSecondary" />
         <Space
             android:layout_width="6dp"
             android:layout_height="wrap_content" />
